@@ -3,12 +3,11 @@ import logo from '../assets/logoitis.png';
 export default function AppHeader() {
   return (
     <header className="bg-white shadow-sm">
-      <div className="w-full px-4 sm:px-6 lg:px-10 py-3 sm:py-4">
+     <div className="w-full px-4 sm:px-6 lg:px-10 py-3 sm:py-4">
         <div className="hidden lg:flex items-center justify-between">
           <div className="flex items-center lg:w-48">
             <img src={logo} alt="ITISMYTOWN" className="h-10" />
           </div>
-
           <div className="flex items-center justify-center gap-3 flex-1 mx-8">
             <div className="relative flex-none w-56 md:w-60 lg:w-64">
               <input type="text" placeholder="Search Location" className="w-full h-11 px-4 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
@@ -24,6 +23,7 @@ export default function AppHeader() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
             </div>
+
 
             <button className="px-6 h-11 bg-[#285A8C] text-white rounded-lg font-medium hover:bg-[#234E79] transition-colors">Search</button>
           </div>
