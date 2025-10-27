@@ -1,3 +1,42 @@
 @import "tailwindcss";
 
+/* Custom checkbox styling - solid green square without tick */
+.custom-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #d1d5db;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.custom-checkbox:checked {
+  background-color: white;
+  border-color: #105617;
+  position: relative;
+}
+
+.custom-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: #105617;
+  border-radius: 2px;
+}
+
+.custom-checkbox:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(16, 86, 23, 0.1);
+}
+
 /* App base styles can be added below if needed */

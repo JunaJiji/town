@@ -235,9 +235,17 @@ export default function ShopperForm({ values, errors = {}, onChange, onBlur, onR
             </div>
           </div>
 
-          <label className="flex items-start gap-2 text-xs sm:text-sm text-gray-700">
-            <input checked={values.agree} onChange={(e) => onChange('agree', e.target.checked)} onBlur={(e) => onBlur && onBlur('agree', e.target.checked)} type="checkbox" className={`mt-1 h-3 w-3 sm:h-4 sm:w-4 rounded border ${errors.agree ? 'border-red-500 text-red-600 focus:ring-red-600' : 'border-gray-300 text-blue-600 focus:ring-blue-600'}`} aria-invalid={!!errors.agree} aria-describedby={errors.agree ? 'agree-error' : undefined} />
-            <span className="font-[Inter_Tight]">I Agree <a href="#" className="text-green-600 hover:text-green-800 underline text-xs sm:text-sm">Terms & Conditions</a> and <a href="#" className="text-green-600 hover:text-green-800 underline text-xs sm:text-sm">Privacy Policy</a></span>
+          <label className="flex items-start gap-2 text-xs sm:text-sm text-gray-700 cursor-pointer">
+            <input 
+              checked={values.agree} 
+              onChange={(e) => onChange('agree', e.target.checked)} 
+              onBlur={(e) => onBlur && onBlur('agree', e.target.checked)} 
+              type="checkbox" 
+              className={`custom-checkbox ${errors.agree ? 'border-red-500' : ''}`}
+              aria-invalid={!!errors.agree} 
+              aria-describedby={errors.agree ? 'agree-error' : undefined} 
+            />
+            <span className="font-[Inter_Tight]">I Agree <a href="#" style={{ color: '#105617' }} className="hover:opacity-80 underline text-xs sm:text-sm">Terms & Conditions</a> and <a href="#" style={{ color: '#105617' }} className="hover:opacity-80 underline text-xs sm:text-sm">Privacy Policy</a></span>
           </label>
           {errors.agree && <p id="agree-error" className="-mt-2 text-xs sm:text-sm text-red-600">{errors.agree}</p>}
 
