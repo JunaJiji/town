@@ -165,7 +165,7 @@ export default function ShopperRegistration() {
         <div className="mb-6">
           <button
             onClick={() => navigate('/')}
-            className="flex items-center gap-2 text-[#285A8C] hover:text-[#234E79] font-medium transition-colors"
+            className="flex items-center gap-2 text-[#285A8C] hover:text-[#234E79] font-[Inter_Tight] font-medium transition-colors"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />

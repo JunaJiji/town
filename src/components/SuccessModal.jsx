@@ -62,10 +62,10 @@ export default function SuccessModal({ isOpen, onClose }) {
 
             {/* Success Message */}
             <div className="text-center">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              <h3 className="text-2xl font-[Inter_Tight] font-bold text-gray-900 mb-2">
                 Registration Successful!
               </h3>
-              <p className="text-gray-600 mb-6">
+              <p className="text-gray-600 mb-6 font-[Inter_Tight]">
                 Your information has been submitted successfully. We'll get back to you soon!
               </p>
 
@@ -73,7 +73,7 @@ export default function SuccessModal({ isOpen, onClose }) {
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <button
                   onClick={onClose}
-                  className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-[#285A8C] hover:bg-[#234E79] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#285A8C] transition-colors"
+                  className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-[Inter_Tight] font-medium rounded-lg text-white bg-[#285A8C] hover:bg-[#234E79] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#285A8C] transition-colors"
                 >
                   <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
@@ -82,7 +82,7 @@ export default function SuccessModal({ isOpen, onClose }) {
                 </button>
                 <button
                   onClick={onClose}
-                  className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-base font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#285A8C] transition-colors"
+                  className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-base font-[Inter_Tight] font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#285A8C] transition-colors"
                 >
                   <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />

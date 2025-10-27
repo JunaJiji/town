@@ -19,7 +19,7 @@ export default function RoleCard({ id, label, Icon, isSelected, onClick }) {
         filled={isSelected}
       />
     </div>
-    <span className="text-sm sm:text-base md:text-lg font-medium text-gray-900 text-center">{label}</span>
+    <span className="text-sm sm:text-base md:text-lg font-[Inter_Tight] font-medium text-gray-900 text-center">{label}</span>
   </button>
     
 

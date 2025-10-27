@@ -30,7 +30,6 @@ export default function FlagIcon({ countryCode, size = 'sm', className = '' }) {
       alt={`${countryCode} flag`}
       className={`${sizeClass} object-cover rounded border border-gray-200 shadow-sm ${className}`}
       style={{
-        imageRendering: 'high-quality',
         imageRendering: '-webkit-optimize-contrast'
       }}
       onError={(e) => {

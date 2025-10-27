@@ -11,7 +11,7 @@ export default function ShopperForm({ values, errors = {}, onChange, onBlur, onR
   return (
     <div className="w-full mx-auto max-w-xs sm:max-w-sm md:max-w-2xl lg:max-w-4xl xl:max-w-5xl">
       <div className="bg-white rounded-xl sm:rounded-2xl shadow-sm border border-gray-200 p-4 sm:p-4 md:p-6 lg:p-8">
-        <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-center text-gray-800 mb-3 sm:mb-4 md:mb-6">
+        <h2 className="text-base sm:text-lg md:text-xl lg:text-2xl font-[Inter_Tight] font-semibold text-center text-gray-800 mb-3 sm:mb-4 md:mb-6">
           Create a Shopper Account
         </h2>
 
@@ -26,11 +26,7 @@ export default function ShopperForm({ values, errors = {}, onChange, onBlur, onR
               onBlur={(e) => onBlur && onBlur('name', e.target.value)} 
               type="text" 
               placeholder="Enter your full name" 
-              className={`w-full h-[41px] font-[Inter_Tight] font-normal text-[14px] leading-[100%] text-black placeholder-gray-400 bg-white border border-gray-300 rounded-lg px-[15px] py-3 focus:outline-none focus:ring-1 ${
-                errors.name
-                  ? 'border-red-500 focus:ring-red-500'
-                  : 'border-gray-300 focus:ring-gray-400'
-              }`}
+              className="w-full h-[41px] font-[Inter_Tight] font-normal text-[14px] leading-[100%] text-black placeholder-gray-400 bg-white border border-gray-300 rounded-lg px-[15px] py-3 focus:outline-none focus:ring-gray-400"
               aria-invalid={!!errors.name} 
               aria-describedby={errors.name ? 'name-error' : undefined} 
             />
@@ -47,7 +43,7 @@ export default function ShopperForm({ values, errors = {}, onChange, onBlur, onR
                 onBlur={(e) => onBlur && onBlur('email', e.target.value)} 
                 type="email" 
                 placeholder="Enter your email ID" 
-                  className={`w-full h-[41px] font-[Inter_Tight] font-normal text-[14px] leading-[100%] text-black placeholder-gray-400 bg-white border border-gray-300 rounded-lg px-[15px] py-3  focus:outline-none focus:ring-2 ${errors.email ? 'border-red-500 focus:ring-red-600' : 'border-gray-300 focus:ring-blue-600'}`}
+                  className="w-full h-[41px] font-[Inter_Tight] font-normal text-[14px] leading-[100%] text-black placeholder-gray-400 bg-white border border-gray-300 rounded-lg px-[15px] py-3  focus:outline-none focus:ring-2 focus:ring-blue-600"
                 aria-invalid={!!errors.email} 
                 aria-describedby={errors.email ? 'email-error' : undefined} 
               />
@@ -62,7 +58,7 @@ export default function ShopperForm({ values, errors = {}, onChange, onBlur, onR
                 onBlur={(e) => onBlur && onBlur('address', e.target.value)} 
                 type="text" 
                 placeholder="Enter your address" 
-                  className={`w-full h-[41px] font-[Inter_Tight] font-normal text-[14px] leading-[100%] text-black placeholder-gray-400 bg-white border border-gray-300 rounded-lg px-[15px] py-3  focus:outline-none focus:ring-2 ${errors.address ? 'border-red-500 focus:ring-red-600' : 'border-gray-300 focus:ring-blue-600'}`}
+                  className="w-full h-[41px] font-[Inter_Tight] font-normal text-[14px] leading-[100%] text-black placeholder-gray-400 bg-white border border-gray-300 rounded-lg px-[15px] py-3  focus:outline-none focus:ring-2 focus:ring-blue-600"
                 aria-invalid={!!errors.address} 
                 aria-describedby={errors.address ? 'address-error' : undefined} 
               />
@@ -76,7 +72,7 @@ export default function ShopperForm({ values, errors = {}, onChange, onBlur, onR
                 onBlur={(e) => onBlur && onBlur('city', e.target.value)} 
                 type="text" 
                 placeholder="Enter your city" 
-                  className={`w-full h-[41px] font-[Inter_Tight] font-normal text-[14px] leading-[100%] text-black placeholder-gray-400 bg-white border border-gray-300 rounded-lg px-[15px] py-3  focus:outline-none focus:ring-2 ${errors.city ? 'border-red-500 focus:ring-red-600' : 'border-gray-300 focus:ring-blue-600'}`}
+                  className="w-full h-[41px] font-[Inter_Tight] font-normal text-[14px] leading-[100%] text-black placeholder-gray-400 bg-white border border-gray-300 rounded-lg px-[15px] py-3  focus:outline-none focus:ring-2 focus:ring-blue-600"
                 aria-invalid={!!errors.city} 
                 aria-describedby={errors.city ? 'city-error' : undefined} 
               />
@@ -91,7 +87,7 @@ export default function ShopperForm({ values, errors = {}, onChange, onBlur, onR
                 onBlur={(e) => onBlur && onBlur('town', e.target.value)} 
                 type="text" 
                 placeholder="Enter your town" 
-                  className={`w-full h-[41px] font-[Inter_Tight] font-normal text-[14px] leading-[100%] text-black placeholder-gray-400 bg-white border border-gray-300 rounded-lg px-[15px] py-3 ed-lg focus:outline-none focus:ring-2 ${errors.town ? 'border-red-500 focus:ring-red-600' : 'border-gray-300 focus:ring-blue-600'}`}
+                  className="w-full h-[41px] font-[Inter_Tight] font-normal text-[14px] leading-[100%] text-black placeholder-gray-400 bg-white border border-gray-300 rounded-lg px-[15px] py-3  focus:outline-none focus:ring-2 focus:ring-blue-600"
                 aria-invalid={!!errors.town} 
                 aria-describedby={errors.town ? 'town-error' : undefined} 
               />
@@ -105,7 +101,7 @@ export default function ShopperForm({ values, errors = {}, onChange, onBlur, onR
                 onBlur={(e) => onBlur && onBlur('state', e.target.value)} 
                 type="text" 
                 placeholder="Enter your State" 
-                  className={`w-full h-[41px] font-[Inter_Tight] font-normal text-[14px] leading-[100%] text-black placeholder-gray-400 bg-white border border-gray-300 rounded-lg px-[15px] py-3  focus:outline-none focus:ring-2 ${errors.state ? 'border-red-500 focus:ring-red-600' : 'border-gray-300 focus:ring-blue-600'}`}
+                  className="w-full h-[41px] font-[Inter_Tight] font-normal text-[14px] leading-[100%] text-black placeholder-gray-400 bg-white border border-gray-300 rounded-lg px-[15px] py-3  focus:outline-none focus:ring-2 focus:ring-blue-600"
                 aria-invalid={!!errors.state} 
                 aria-describedby={errors.state ? 'state-error' : undefined} 
               />
@@ -120,7 +116,7 @@ export default function ShopperForm({ values, errors = {}, onChange, onBlur, onR
                 onBlur={(e) => onBlur && onBlur('postalCode', e.target.value)} 
                 type="text" 
                 placeholder="395007" 
-                  className={`w-full h-[41px] font-[Inter_Tight] font-normal text-[14px] leading-[100%] text-black placeholder-gray-400 bg-white border border-gray-300 rounded-lg px-[15px] py-3  focus:outline-none focus:ring-2 ${errors.postalCode ? 'border-red-500 focus:ring-red-600' : 'border-gray-300 focus:ring-blue-600'}`}
+                  className="w-full h-[41px] font-[Inter_Tight] font-normal text-[14px] leading-[100%] text-black placeholder-gray-400 bg-white border border-gray-300 rounded-lg px-[15px] py-3  focus:outline-none focus:ring-2 focus:ring-blue-600"
                 aria-invalid={!!errors.postalCode} 
                 aria-describedby={errors.postalCode ? 'postal-error' : undefined} 
               />
@@ -160,7 +156,7 @@ export default function ShopperForm({ values, errors = {}, onChange, onBlur, onR
   inputMode="numeric"
   pattern="[0-9]*"
   placeholder={(values.selectedCountry || getDefaultCountry()).code === 'IN' ? "97854 42580" : "Enter mobile number"} 
-  className={`w-full pr-3 sm:pr-3 py-2 sm:py-2.5 text-sm sm:text-base border rounded-lg focus:outline-none focus:ring-2 ${errors.mobile ? 'border-red-500 focus:ring-red-600' : 'border-gray-300 focus:ring-blue-600'}`}
+  className="w-full pr-3 sm:pr-3 py-2 sm:py-2.5 text-sm sm:text-base border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
   style={{ 
     paddingLeft: `${window.innerWidth < 640 ? 12 + 16 + 4 + ((values.selectedCountry || getDefaultCountry()).dialCode.length * 6) + 4 : 12 + 20 + 8 + ((values.selectedCountry || getDefaultCountry()).dialCode.length * 8) + 8}px` 
   }}
@@ -180,7 +176,7 @@ export default function ShopperForm({ values, errors = {}, onChange, onBlur, onR
                   onBlur={(e) => onBlur && onBlur('password', e.target.value)} 
                   type={showPassword ? "text" : "password"} 
                   placeholder="Create a secure password" 
-                  className={`w-full h-[41px] font-[Inter_Tight] font-normal text-[14px] leading-[100%] text-black placeholder-gray-400 bg-white border border-gray-300 rounded-lg px-[15px] py-3  focus:outline-none focus:ring-2 ${errors.password ? 'border-red-500 focus:ring-red-600' : 'border-gray-300 focus:ring-blue-600'}`} 
+                  className="w-full h-[41px] font-[Inter_Tight] font-normal text-[14px] leading-[100%] text-black placeholder-gray-400 bg-white border border-gray-300 rounded-lg px-[15px] py-3  focus:outline-none focus:ring-2 focus:ring-blue-600" 
                   aria-invalid={!!errors.password} 
                   aria-describedby={errors.password ? 'password-error' : undefined} 
                 />
@@ -213,7 +209,7 @@ export default function ShopperForm({ values, errors = {}, onChange, onBlur, onR
                   onBlur={(e) => onBlur && onBlur('confirmPassword', e.target.value)} 
                   type={showConfirmPassword ? "text" : "password"} 
                   placeholder="Re-enter your password" 
-                  className={`w-full h-[41px] font-[Inter_Tight] font-normal text-[14px] leading-[100%] text-black placeholder-gray-400 bg-white border border-gray-300 rounded-lg px-[15px] py-3  focus:outline-none focus:ring-2 ${errors.confirmPassword ? 'border-red-500 focus:ring-red-600' : 'border-gray-300 focus:ring-blue-600'}`} 
+                  className="w-full h-[41px] font-[Inter_Tight] font-normal text-[14px] leading-[100%] text-black placeholder-gray-400 bg-white border border-gray-300 rounded-lg px-[15px] py-3  focus:outline-none focus:ring-2 focus:ring-blue-600" 
                   aria-invalid={!!errors.confirmPassword} 
                   aria-describedby={errors.confirmPassword ? 'confirmPassword-error' : undefined} 
                 />
@@ -241,12 +237,12 @@ export default function ShopperForm({ values, errors = {}, onChange, onBlur, onR
 
           <label className="flex items-start gap-2 text-xs sm:text-sm text-gray-700">
             <input checked={values.agree} onChange={(e) => onChange('agree', e.target.checked)} onBlur={(e) => onBlur && onBlur('agree', e.target.checked)} type="checkbox" className={`mt-1 h-3 w-3 sm:h-4 sm:w-4 rounded border ${errors.agree ? 'border-red-500 text-red-600 focus:ring-red-600' : 'border-gray-300 text-blue-600 focus:ring-blue-600'}`} aria-invalid={!!errors.agree} aria-describedby={errors.agree ? 'agree-error' : undefined} />
-            <span>I Agree <a href="#" className="text-green-600 hover:text-green-800 underline text-xs sm:text-sm">Terms & Conditions</a> and <a href="#" className="text-green-600 hover:text-green-800 underline text-xs sm:text-sm">Privacy Policy</a></span>
+            <span className="font-[Inter_Tight]">I Agree <a href="#" className="text-green-600 hover:text-green-800 underline text-xs sm:text-sm">Terms & Conditions</a> and <a href="#" className="text-green-600 hover:text-green-800 underline text-xs sm:text-sm">Privacy Policy</a></span>
           </label>
           {errors.agree && <p id="agree-error" className="-mt-2 text-xs sm:text-sm text-red-600">{errors.agree}</p>}
 
-          <div className="flex flex-col sm:flex-row justify-center gap-2 sm:gap-3 md:gap-4 pt-1 sm:pt-3">
-          <button 
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 pt-1 sm:pt-3">
+                      <button 
               type="button" 
               onClick={onReset} 
               disabled={isSubmitting}
@@ -254,28 +250,32 @@ export default function ShopperForm({ values, errors = {}, onChange, onBlur, onR
                 color:'#105617',
                 borderColor:'#105617',
               }}
-              className="w-full sm:w-[275px] h-[43px] px-4 sm:px-8 py-3 rounded-lg border  bg-white hover:bg-green-50 font-normal text-sm sm:text-base transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+              className="w-full h-[43px] px-4 sm:px-8 py-3 rounded-lg border  bg-white hover:bg-green-50 font-[Inter_Tight] font-normal text-sm sm:text-base transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
             >
               Reset
             </button>
 
             <button 
              type="submit" 
-             disabled={isSubmitting}
-             className="w-full sm:w-[275px] h-[43px] px-4 sm:px-8 py-3 rounded-lg border text-blue-600 bg-white hover:text-white font-normal text-sm sm:text-base transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+             disabled={isSubmitting || !values.agree}
+             className="w-full h-[43px] px-4 sm:px-8 py-3 rounded-lg border text-blue-600 bg-white hover:text-white font-[Inter_Tight] font-normal text-sm sm:text-base transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
              style={{
                borderColor: COLORS.primaryHover,
                color: COLORS.primaryHover
              }}
              onMouseEnter={(e) => {
-               e.target.style.backgroundColor = COLORS.primaryHover;
-               e.target.style.borderColor = COLORS.primaryHover;
-               e.target.style.color = 'white';
+               if (!isSubmitting && values.agree) {
+                 e.target.style.backgroundColor = COLORS.primaryHover;
+                 e.target.style.borderColor = COLORS.primaryHover;
+                 e.target.style.color = 'white';
+               }
              }}
              onMouseLeave={(e) => {
-               e.target.style.backgroundColor = 'white';
-               e.target.style.borderColor = COLORS.primaryHover;
-               e.target.style.color = COLORS.primaryHover;
+               if (!isSubmitting && values.agree) {
+                 e.target.style.backgroundColor = 'white';
+                 e.target.style.borderColor = COLORS.primaryHover;
+                 e.target.style.color = COLORS.primaryHover;
+               }
              }}>
               {isSubmitting ? (
                 <>

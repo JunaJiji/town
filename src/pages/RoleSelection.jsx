@@ -176,7 +176,7 @@ export default function RoleSelection() {
 
       {/* Main Content */}
       <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 py-8 sm:py-12 md:py-20 lg:max-w-none lg:mx-0">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8 sm:mb-12 md:mb-16">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-[Inter_Tight] font-bold text-center text-gray-900 mb-8 sm:mb-12 md:mb-16">
           Select Your Role
         </h1>
 
@@ -201,7 +201,7 @@ export default function RoleSelection() {
         {selectedRole && !hasContinued && (
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
             <button
-              className="w-full sm:w-auto px-8 sm:px-12 py-3 border-2 border-[#285A8C] text-[#285A8C] rounded-lg font-medium hover:bg-blue-50 transition-colors"
+              className="w-full sm:w-auto px-8 sm:px-12 py-3 border-2 border-[#285A8C] text-[#285A8C] rounded-lg font-[Inter_Tight] font-medium hover:bg-blue-50 transition-colors"
               onClick={() => {
                 setSelectedRole(null);
               }}
@@ -209,7 +209,7 @@ export default function RoleSelection() {
               Home
             </button>
             <button
-              className="w-full sm:w-auto px-8 sm:px-12 py-3 rounded-lg font-medium transition-colors text-white bg-[#285A8C] hover:bg-[#234E79]"
+              className="w-full sm:w-auto px-8 sm:px-12 py-3 rounded-lg font-[Inter_Tight] font-medium transition-colors text-white bg-[#285A8C] hover:bg-[#234E79]"
               aria-disabled={selectedRole !== 'Shopper'}
               title={selectedRole !== 'Shopper' ? 'Select Shopper to continue' : undefined}
               onClick={() => {
